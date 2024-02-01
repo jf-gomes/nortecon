@@ -1,0 +1,29 @@
+.slidesContainer{
+    background-color: #CFFFF4;
+    width: 90vw;
+}
+
+.slideText{
+    max-width: 600px;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.slideImg{
+    width: 740px;
+    height: 500px;
+}
+
+@media (max-width: 900px) {
+    .slideImg{
+        width: 500px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 620px) {
+    .slideImg{
+        width: 350px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,19 @@
+.accordionContainerDiv{
+    width: 800px;
+}
+
+.allAboutContainerDiv{
+    background-color: #1A7D66;
+}
+
+@media (max-width: 900px) {
+    .accordionContainerDiv{
+        width: 500px;
+    }
+}
+
+@media (max-width: 620px) {
+    .accordionContainerDiv{
+        width: 380px;
+    }
+}

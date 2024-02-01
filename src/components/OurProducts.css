@@ -1,0 +1,19 @@
+.product{
+    background-color: #014A39;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.ourProductsBtn{
+    background-color: #014A39;
+    color: white;
+    border-radius: 8px;
+    transition: .3s;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.ourProductsBtn:hover{
+    background-color: #1A7D66;
+}

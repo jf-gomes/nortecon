@@ -1,0 +1,18 @@
+.logoHeader{
+    width: 150px;
+    height: 100px;
+}
+
+.navbar{
+    background-color: #014A39;
+}
+
+
+.nav-link:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.nav-link:focus{
+    color: white;
+}
