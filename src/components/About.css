@@ -1,0 +1,38 @@
+.aboutLeftDiv{
+    background-color: #014A39;
+    height: 300px;
+    max-width: 600px;
+}
+
+.simulationDiv{
+    background-color: #CFFFF4;
+    height: 300px;
+    width: 400px;
+}
+
+.simulationBtn{
+    background-color: white;
+    color: #014A39;
+    width: 150px;
+    border-radius: 8px;
+    transition: .3s;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.simulationBtn:hover{
+    background-color: #1A7D66;
+    color: white;
+}
+
+.seeMoreAboutProductsBtn{
+    background-color: #1A7D66;
+    color: white;
+    width: 400px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding: 6px;
+}

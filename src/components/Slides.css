@@ -10,8 +10,8 @@
 }
 
 .slideImg{
-    width: 740px;
-    height: 500px;
+    width: 600px;
+    height: 400;
 }
 
 @media (max-width: 900px) {
@@ -21,7 +21,7 @@
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 720px) {
     .slideImg{
         width: 350px;
         height: 200px;

@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 span{
     color: #014a39;
     font-weight: bold;

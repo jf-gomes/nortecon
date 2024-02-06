@@ -6,6 +6,7 @@ import Advantages from './components/Advantages';
 import OurProducts from './components/OurProducts';
 import AllAbout from './components/AllAbout';
 import Footer from './components/Footer';
+import About from './components/About';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <>
       <Header />
       <FirstSection />
+      <About />
       <Advantages />
       <OurProducts />
       <AllAbout />
