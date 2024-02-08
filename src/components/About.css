@@ -7,7 +7,7 @@
 .simulationDiv{
     background-color: #CFFFF4;
     height: 300px;
-    width: 400px;
+    width: 500px;
 }
 
 .simulationBtn{
@@ -17,7 +17,6 @@
     border-radius: 8px;
     transition: .3s;
     border: none;
-    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -33,6 +32,15 @@
     border-radius: 8px;
     border: none;
     font-weight: 500;
-    font-size: 1.3em;
     padding: 6px;
+}
+
+@media (max-width: 720px){
+    .aboutLeftDiv{
+        width: 500px;
+    }
+
+    .seeMoreAboutProductsBtn{
+        width: 300px;
+    }
 }

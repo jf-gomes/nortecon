@@ -6,10 +6,10 @@ import Col from 'react-bootstrap/Col'
 
 export default function FirstSection(){
     return (
-        <div className='firstSectionContainer'>
-            <div className='firstSectionLeftDiv'>
-                <h2>Bem-vindo(a) à NorteCon!</h2>
-                <button>Saiba mais sobre o consórcio</button>
+        <div className='firstSectionContainer d-flex align-items-center justify-content-center flex-wrap'>
+            <div className='d-flex flex-column gap-4'>
+                <h2 className='text-white'>Bem-vindo(a) à NorteCon!</h2>
+                <button className='firstSectionBtn'>Saiba mais sobre o consórcio</button>
             </div>
             <img className='firstSectionLogo' src={firstSectionImg} alt="NorteCon" />
         </div>
