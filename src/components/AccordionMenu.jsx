@@ -2,7 +2,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 export default function AccordionMenu(){
     return (
-        <Accordion >
+        <Accordion>
             <Accordion.Item eventKey='0'>
                 <Accordion.Header>Como funciona o consórcio?</Accordion.Header>
                 <Accordion.Body>
@@ -10,7 +10,7 @@ export default function AccordionMenu(){
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey='1'>
-                <Accordion.Header>Quais as vantagens?</Accordion.Header>
+                <Accordion.Header>Quais as vantagens da NorteCon?</Accordion.Header>
                 <Accordion.Body>
                 <ul>
                     <li>Sem juros, apenas taxa de administração.</li>

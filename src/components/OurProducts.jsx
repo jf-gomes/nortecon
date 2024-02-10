@@ -12,11 +12,24 @@ export default function OurProducts(){
     const productsData = [
         {
             name: "Imobiliário",
-            description: "Você pode usar o seu crédito, após a contemplação, para comprar um imóvel, reformar, terreno ou até mesmo imóvel na planta."
+            description: "Você pode usar o seu crédito, após a contemplação, para comprar um imóvel, reformar, terreno ou até mesmo imóvel na planta.",
+            listItems: [
+                'Aquisição de imóvel novo ou usado, comercial ou misto',
+                'Construção, ampliação ou reforma',
+                'Aquisição de terreno com construção',
+                'Quitação de financiamento'
+            ]
         },
         {
             name: "Automotor",
-            description: "Após a contemplação você pode comprar Carro, moto, aeronave e até embarcação."
+            description: "Após a contemplação você pode comprar carro, moto, aeronave ou até embarcação.",
+            listItems: [
+                'Aquisição de veículo novo',
+                'Aquisição de veículo usado, até 5 anos de uso',
+                'Quitação de financiamento',
+                'Aquisição de lancha',
+                'Aquisição de placas fotovoltaicas'
+            ]
         }
     ]
     

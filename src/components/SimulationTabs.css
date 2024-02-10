@@ -1,0 +1,12 @@
+.simulationTab{
+    background-color: #014A39;
+    color: white;
+}
+
+.simulationTab:hover{
+    background-color: #1A7D66;
+}
+
+.simulationTab:focus{
+    color: black;
+}

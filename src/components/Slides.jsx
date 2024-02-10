@@ -36,6 +36,10 @@ export default function Slides(){
                 pagination={{ clickable: true }}
                 navigation
                 autoplay
+                style={{
+                    "--swiper-pagination-color": "#014A39",
+                    "--swiper-navigation-color": "#014A39"
+                }}
             >
                 {slidesData.map((slide) => (
                     <SwiperSlide key={slide.id}>

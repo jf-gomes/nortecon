@@ -1,0 +1,31 @@
+.modalImg{
+    width: 700px;
+    box-shadow: 8px 7px 13px -5px;
+}
+
+.modalBtn{
+    background-color: #014A39;
+    transition: .3s;
+    border: none;
+    width: 200px;
+}
+
+.modalBtn:hover{
+    background-color: #1A7D66;
+}
+
+.modalBody{
+    background-image: linear-gradient(to bottom, #fff, #CFFFF4);
+}
+
+@media (max-width: 990px){
+    .modalImg{
+        width: 400px;
+    }
+}
+
+@media (max-width: 580px){
+    .modalImg{
+        width: 350px;
+    }
+}

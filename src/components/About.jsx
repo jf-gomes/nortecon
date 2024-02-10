@@ -4,7 +4,7 @@ import SimulationTabs from './SimulationTabs'
 
 export default function About(){
     return (
-        <div className='aboutContainerDiv d-flex flex-column'>
+        <section id='aboutSection' className='aboutContainerDiv d-flex flex-column'>
             <h3 className='p-4 m-4 text-center'>Sobre a <span>NorteCon</span></h3>
             <div className='d-flex gap-4 p-4 m-4 align-items-center justify-content-center flex-wrap'>
                 <div className='aboutLeftDiv p-4 rounded-4 d-flex flex-column align-items-center justify-content-center'>
@@ -19,6 +19,6 @@ export default function About(){
                     <button className='simulationBtn'>Simular</button>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

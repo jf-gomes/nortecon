@@ -1,13 +1,18 @@
 import Nav from 'react-bootstrap/Nav'
+import './SimulationTabs.css'
+import { useState } from 'react'
 
 export default function SimulationTabs(){
+
+    const [activeProduct, setActiveProduct] = useState('housing')
+    
     return (
-        <Nav fill variant="tabs" defaultActiveKey="/home">
+        <Nav className='gap-1' fill variant="tabs" defaultActiveKey="/home">
             <Nav.Item>
-                <Nav.Link className='text-black'>Imobiliário</Nav.Link>
+                <Nav.Link style={activeProduct == 'housing' ? {backgroundColor: '#1A7D66', textDecoration: 'underline'} : null} onClick={() => setActiveProduct('housing')} className='text-white simulationTab'>Imobiliário</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link className='text-black'>Automotor</Nav.Link>
+                <Nav.Link style={activeProduct == 'vehicle' ? {backgroundColor: '#1A7D66', textDecoration: 'underline'} : null} onClick={() => setActiveProduct('vehicle')}  className='text-white simulationTab'>Automotor</Nav.Link>
             </Nav.Item>
         </Nav>
     )
