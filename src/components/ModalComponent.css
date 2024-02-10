@@ -18,13 +18,13 @@
     background-image: linear-gradient(to bottom, #fff, #CFFFF4);
 }
 
-@media (max-width: 990px){
+@media (max-width: 995px){
     .modalImg{
-        width: 400px;
+        width: 450px;
     }
 }
 
-@media (max-width: 580px){
+@media (max-width: 600px){
     .modalImg{
         width: 350px;
     }

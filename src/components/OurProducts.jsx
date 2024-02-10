@@ -36,7 +36,7 @@ export default function OurProducts(){
     return (
         <>
         <ModalComponent modalShow={modalShow} setModalShow={setModalShow} product={displayedProduct} />
-        <div className='d-flex flex-column justify-content-center mb-4 p-4'>
+        <section id='products' className='d-flex flex-column justify-content-center mb-4 p-4'>
             <h3 className='text-center m-4'>Nossos produtos</h3>
             <div className='d-flex justify-content-center flex-wrap' style={{gap: '12rem'}}>
                 <div className='d-flex flex-column'>
@@ -56,7 +56,7 @@ export default function OurProducts(){
                     }} className='ourProductsBtn'>Saiba mais</button>
                 </div>
             </div>
-        </div>
+        </section>
         </>
     )
 }

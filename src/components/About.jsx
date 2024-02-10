@@ -10,7 +10,7 @@ export default function About(){
                 <div className='aboutLeftDiv p-4 rounded-4 d-flex flex-column align-items-center justify-content-center'>
                     <p className='text-white' style={{textAlign: 'justify'}}>A NorteCon surgiu em 2015 com o objetivo de simplificar a forma de planejamento financeiro, possibilitando aumento de patrimônio e realização de sonhos dos clientes.</p>
                     <p className='text-white' style={{textAlign: 'justify'}}>Nosso portifolio de produtos inclui o Consório Imobiliáro e de Veículos.</p>
-                    <button className='seeMoreAboutProductsBtn'>Veja mais sobre nossos produtos</button>
+                    <a href="#products"><button className='seeMoreAboutProductsBtn'>Veja mais sobre nossos produtos</button></a>
                 </div>
                 <div className='simulationDiv d-flex flex-column align-items-center gap-2 p-4 rounded-4'>
                     <h4 className='text-black'>Faça uma simulação!</h4>

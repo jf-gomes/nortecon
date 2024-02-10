@@ -22,17 +22,7 @@ export default function ModalComponent({ product, modalShow, setModalShow }){
                 </Modal.Header>
                 <Modal.Body className='modalBody d-flex flex-column align-items-center gap-4'>
                     <p>{product.description}</p>
-                    <div>
-                        <p>Possibilidades para utilização do crédito:</p>
-                        <ol>
-                            {product.listItems.map((item) => (
-                                <li>
-                                    {item}
-                                </li>
-                            ))}
-                        </ol>
-                    </div>
-                    <img className='modalImg rounded' src={product.name == 'Imobiliário' ? knowMoreHousing : knowMoreVehicles} alt="" />
+                    <img className='modalImg rounded' src={product.name == 'Imobiliário' ? 'https://i.imgur.com/mY5eQtM.jpg' : 'https://i.imgur.com/zYhTXRK.jpg'} alt="" />
                     <div className='d-flex justify-content-center flex-wrap gap-4'>
                         <a href="#aboutSection"><button className='modalBtn text-white rounded' onClick={() => setModalShow(false)}>Fazer uma simulação!</button></a>
                         <button className='modalBtn text-white rounded' onClick={() => setModalShow(false)}>Fechar</button>

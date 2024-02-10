@@ -11,21 +11,23 @@ export default function Slides(){
     const slidesData = [
         {
             id: '0',
-            img: 'https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            title: 'Sem juros, apenas taxa de administração',
-            txt: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestiae sunt ab asperiores aliquam ad reprehenderit, adipisci qui nobis. Cupiditate quas reiciendis provident dolorem eos optio molestias at molestiae cumque.'
+            img: 'https://i.imgur.com/fRUQpfE.jpg',
+            title: 'Sem juros, apenas taxa de administração'
         },
         {
             id: '1',
-            img: 'https://images.pexels.com/photos/1668860/pexels-photo-1668860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            title: 'Pagamento do lance com a própria carta de crédito, limitado a 50%',
-            txt: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestiae sunt ab asperiores aliquam ad reprehenderit, adipisci qui nobis. Cupiditate quas reiciendis provident dolorem eos optio molestias at molestiae cumque.'
+            img: 'https://i.imgur.com/Sza20sY.jpg',
+            title: 'Pagamento do lance com a própria carta de crédito, limitado a 50%'
         },
         {
             id: '2',
-            img: 'https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            title: 'Reembolso de despesas cartorarias em até 10% do valor da carta de crédito',
-            txt: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestiae sunt ab asperiores aliquam ad reprehenderit, adipisci qui nobis. Cupiditate quas reiciendis provident dolorem eos optio molestias at molestiae cumque.'
+            img: 'https://i.imgur.com/JKfupBh.jpg',
+            title: 'Reembolso de despesas cartorarias em até 10% do valor da carta de crédito'
+        },
+        {
+            id: '3',
+            img: 'https://i.imgur.com/P3QqUqu.jpg',
+            title: 'Reembolso de despesas cartorarias em até 10% do valor da carta de crédito'
         }
     ]
 
@@ -44,7 +46,6 @@ export default function Slides(){
                 {slidesData.map((slide) => (
                     <SwiperSlide key={slide.id}>
                         <div className='d-flex gap-4 align-items-center justify-content-center flex-wrap'>
-                            <p className='text-center fs-4 p-2 m-2'>{slide.title}</p>
                             <img src={slide.img} alt={slide.title} className='slideImg rounded-3' />
                         </div>
                     </SwiperSlide>

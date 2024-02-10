@@ -33,6 +33,12 @@
     border: none;
     font-weight: 500;
     padding: 6px;
+    transition: .6s;
+}
+
+.seeMoreAboutProductsBtn:hover{
+    background-color: white;
+    color: black;
 }
 
 @media (max-width: 720px){
