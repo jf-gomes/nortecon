@@ -18,11 +18,11 @@
 }
 
 .productLeftDiv{
-    transform: translate(-1000px);
+    transform: rotate(180deg);
     opacity: 0;
 }
 
 .productRightDiv{
-    transform: translate(1000px);
+    transform: rotate(180deg);
     opacity: 0;
 }

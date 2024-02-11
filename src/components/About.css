@@ -1,7 +1,7 @@
 .aboutLeftDiv{
     background-color: #014A39;
     height: 300px;
-    max-width: 600px;
+    width: 500px;
 }
 
 .simulationDiv{
@@ -13,7 +13,7 @@
 .simulationBtn{
     background-color: white;
     color: #014A39;
-    width: 150px;
+    width: 100%;
     border-radius: 8px;
     transition: .3s;
     border: none;
@@ -28,7 +28,7 @@
 .seeMoreAboutProductsBtn{
     background-color: #1A7D66;
     color: white;
-    width: 400px;
+    width: 100%;
     border-radius: 8px;
     border: none;
     font-weight: 500;
@@ -42,11 +42,13 @@
 }
 
 @media (max-width: 720px){
-    .aboutLeftDiv{
-        width: 500px;
+    .aboutLeftDiv, .simulationDiv{
+        width: 90vw;
     }
+}
 
-    .seeMoreAboutProductsBtn{
-        width: 300px;
+@media (max-width: 500px){
+    .aboutLeftDiv, .simulationDiv{
+        height: fit-content;
     }
 }

@@ -38,7 +38,7 @@ export default function OurProducts(){
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
         gsap.to('.productLeftDiv', {
-            x: 0,
+            rotate: 0,
             opacity: 1,
             scrollTrigger: {
                 trigger: '#products',
@@ -46,7 +46,7 @@ export default function OurProducts(){
             }
         })
         gsap.to('.productRightDiv', {
-            x: 0,
+            rotate: 0,
             opacity: 1,
             scrollTrigger: {
                 trigger: '#products',

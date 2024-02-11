@@ -1,6 +1,6 @@
 .slidesContainer{
     background-color: #CFFFF4;
-    width: 90vw;
+    width: 90vw
 }
 
 .slideText{
@@ -11,5 +11,23 @@
 .slideImg{
     width: 100%;
     max-width: 1000px;
-    height: 600;
+}
+
+@media (max-width: 660px) {
+    .slidesContainer{
+        height: 500px;
+    }
+    .slideImg{
+        height: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+    .slidesContainer{
+        height: 400px;
+        width: 100vw;
+    }
+    .slideImg{
+        height: 300px;
+    }
 }
