@@ -1,11 +1,7 @@
 .firstSectionContainer{
     background-color: #1A7D66;
-    height: 80vh;
+    height: 60vh;
     gap: 2rem;
-}
-
-.firstSectionLeftDiv h2{
-    color: white
 }
 
 .firstSectionBtn{

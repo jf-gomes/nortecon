@@ -2,7 +2,9 @@ import automotor from '../img/automotor.jpg'
 import imobiliario from '../img/imobiliario.jpg'
 import './OurProducts.css'
 import ModalComponent from './ModalComponent'
-import { useState } from 'react'
+import { useState, useLayoutEffect } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
 
 export default function OurProducts(){
 
@@ -32,6 +34,26 @@ export default function OurProducts(){
             ]
         }
     ]
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.to('.productLeftDiv', {
+            x: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: '#products',
+                start: 'top 800px'
+            }
+        })
+        gsap.to('.productRightDiv', {
+            x: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: '#products',
+                start: 'top 800px'
+            }
+        })
+    }, [])
     
     return (
         <>
@@ -39,7 +61,7 @@ export default function OurProducts(){
         <section id='products' className='d-flex flex-column justify-content-center mb-4 p-4'>
             <h3 className='text-center m-4'>Nossos produtos</h3>
             <div className='d-flex justify-content-center flex-wrap' style={{gap: '12rem'}}>
-                <div className='d-flex flex-column'>
+                <div className='productLeftDiv d-flex flex-column'>
                     <img className='product p-4' src={imobiliario} alt="Imobiliário" />
                     <h4 className='text-center m-4'>Imobiliário</h4>
                     <button onClick={() => {
@@ -47,7 +69,7 @@ export default function OurProducts(){
                         setModalShow(true)
                     }} className='ourProductsBtn'>Saiba mais</button>
                 </div>
-                <div className='d-flex flex-column'>
+                <div className='productRightDiv d-flex flex-column'>
                     <img className='product p-4' src={automotor} alt="Automotor" />
                     <h4 className='text-center m-4'>Automotor</h4>
                     <button onClick={() => {

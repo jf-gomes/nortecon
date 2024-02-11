@@ -1,5 +1,6 @@
 .modalImg{
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     box-shadow: 8px 7px 13px -5px;
 }
 
@@ -16,16 +17,4 @@
 
 .modalBody{
     background-image: linear-gradient(to bottom, #fff, #CFFFF4);
-}
-
-@media (max-width: 995px){
-    .modalImg{
-        width: 450px;
-    }
-}
-
-@media (max-width: 600px){
-    .modalImg{
-        width: 350px;
-    }
 }
