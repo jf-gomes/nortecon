@@ -1,0 +1,39 @@
+.aboutMain{
+    background-color: #1A7D66;
+    text-align: justify;
+}
+
+.aboutTextDiv{
+    max-width: 800px;
+}
+
+.aboutPageSimulationDiv{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 600px;
+}
+
+.simulateBtn{
+    background-color: #1A7D66;
+    color: #014A39;
+    width: 100%;
+    border-radius: 8px;
+    transition: .3s;
+    border: none;
+    font-weight: bold;
+    color: white;
+    margin-top: 6px;
+    padding: 6px;
+}
+
+.simulateBtn:hover{
+    background-color: #CFFFF4;
+    color: black;
+}
+ 
+@media (max-width: 720px) {
+    .aboutPageSimulationDiv{
+        width: 350px;
+    }
+}

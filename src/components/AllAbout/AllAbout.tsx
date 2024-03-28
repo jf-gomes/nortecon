@@ -1,4 +1,4 @@
-import AccordionMenu from "./AccordionMenu"
+import AccordionMenu from "../AccordionMenu/AccordionMenu"
 import './AllAbout.css'
 
 export default function AllAbout(){

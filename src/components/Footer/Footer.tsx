@@ -22,7 +22,7 @@ export default function Footer(){
                     </ul>
                 </div>
             </div>
-            <p className="text-center">&copy; 2024 NorteCon. Todos os direitos reservados.</p>
+            <p className="copyrightFooter text-center">&copy; 2024 NorteCon. Todos os direitos reservados.</p>
         </footer>
     )
 }

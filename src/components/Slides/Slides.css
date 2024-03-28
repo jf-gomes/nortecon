@@ -1,6 +1,7 @@
 .slidesContainer{
     background-color: #CFFFF4;
-    width: 90vw
+    width: 90vw;
+    max-width: 1800px;
 }
 
 .slideText{

@@ -6,6 +6,8 @@ import 'swiper/css/scrollbar'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import './Slides.css'
 
+register()
+
 export default function Slides(){
 
     const slidesData = [
@@ -35,13 +37,7 @@ export default function Slides(){
         <div className='slidesContainer d-flex align-items-center justify-content-center rounded-3 p-4'>
             <Swiper
                 slidesPerView={1}
-                pagination={{ clickable: true }}
-                navigation
                 autoplay
-                style={{
-                    "--swiper-pagination-color": "#014A39",
-                    "--swiper-navigation-color": "#014A39"
-                }}
             >
                 {slidesData.map((slide) => (
                     <SwiperSlide key={slide.id}>

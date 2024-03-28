@@ -1,6 +1,6 @@
 .firstSectionContainer{
     background-color: #1A7D66;
-    height: 60vh;
+    height: 70vh;
     gap: 2rem;
 }
 
@@ -22,8 +22,16 @@
     width: 450px;
 }
 
+.slogan{
+    width: 500px;
+    font-size: 1.2em;
+}
+
 @media (max-width: 720px) {
     .firstSectionLogo{
+        width: 300px;
+    }
+    .slogan{
         width: 300px;
     }
 }

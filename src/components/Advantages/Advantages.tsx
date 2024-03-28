@@ -1,4 +1,4 @@
-import Slides from "./Slides";
+import Slides from "../Slides/Slides";
 
 export default function Advantages(){
     return (

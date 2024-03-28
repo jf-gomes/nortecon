@@ -1,17 +1,33 @@
-import automotor from '../img/automotor.jpg'
-import imobiliario from '../img/imobiliario.jpg'
+import automotor from '../../img/automotor.jpg'
+import imobiliario from '../../img/imobiliario.jpg'
 import './OurProducts.css'
-import ModalComponent from './ModalComponent'
+import ModalComponent from '../ModalComponent/ModalComponent'
 import { useState, useLayoutEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
+import { productType } from '../ModalComponent/ModalComponent'
 
-export default function OurProducts(){
+interface OurProductsProps{
+    title: boolean,
+    src: string
+}
+
+export default function OurProducts({ title, src }: OurProductsProps){
 
     const [modalShow, setModalShow] = useState(false)
-    const [displayedProduct, setDisplayedProduct] = useState()
+    const [displayedProduct, setDisplayedProduct] = useState<productType>(
+        {
+            name: "Imobiliário",
+            description: "Você pode usar o seu crédito, após a contemplação, para comprar um imóvel, reformar, terreno ou até mesmo imóvel na planta.",
+            listItems: [
+                'Aquisição de imóvel novo ou usado, comercial ou misto',
+                'Construção, ampliação ou reforma',
+                'Aquisição de terreno com construção',
+                'Quitação de financiamento'
+            ]
+        })
 
-    const productsData = [
+    const productsData: productType[] = [
         {
             name: "Imobiliário",
             description: "Você pode usar o seu crédito, após a contemplação, para comprar um imóvel, reformar, terreno ou até mesmo imóvel na planta.",
@@ -57,9 +73,9 @@ export default function OurProducts(){
     
     return (
         <>
-        <ModalComponent modalShow={modalShow} setModalShow={setModalShow} product={displayedProduct} />
+        <ModalComponent modalShow={modalShow} setModalShow={setModalShow} product={displayedProduct} src={src} />
         <section id='products' className='d-flex flex-column justify-content-center mb-4 p-4'>
-            <h3 className='text-center m-4'>Nossos produtos</h3>
+            {title && <h3 className='text-center m-4'>Nossos produtos</h3>}
             <div className='d-flex justify-content-center flex-wrap' style={{gap: '12rem'}}>
                 <div className='productLeftDiv d-flex flex-column'>
                     <img className='product p-4' src={imobiliario} alt="Imobiliário" />

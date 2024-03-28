@@ -15,3 +15,7 @@
 .footerUl li a:hover{
     text-decoration: underline;
 }
+
+.copyrightFooter{
+    font-size: .8em;
+}

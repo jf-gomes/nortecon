@@ -1,0 +1,18 @@
+.professionalsMain{
+    background-color: #1A7D66;
+    text-align: justify;
+    height: 100vh;
+}
+
+.professionalsTextDiv{
+    max-width: 800px;
+}
+
+.backBtn{
+    text-decoration: none;
+    float: right;
+}
+
+.backBtn:hover{
+    text-decoration: underline;
+}

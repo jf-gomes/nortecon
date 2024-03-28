@@ -1,6 +1,6 @@
 import './About.css'
-import SliderComponent from './SliderComponent'
-import SimulationTabs from './SimulationTabs'
+import SliderComponent from '../SliderComponent/SliderComponent'
+import SimulationTabs from '../SimulationTabs/SimulationTabs'
 
 export default function About(){
     return (

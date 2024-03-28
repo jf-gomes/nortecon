@@ -1,11 +1,13 @@
 import './FirstSection.css'
-import firstSectionImg from '../img/firstSectionImg.png'
+import firstSectionImg from '../../img/firstSectionImg.png'
 import { useState, useEffect } from 'react'
-
+import { useNavigate } from 'react-router-dom'
 
 export default function FirstSection(){
 
-    const [size, setSize] = useState()
+    const navigate = useNavigate()
+
+    const [size, setSize] = useState<number>(window.innerWidth)
 
     useEffect(() => {
         function handleResize(){
@@ -24,7 +26,8 @@ export default function FirstSection(){
                 <img className='firstSectionLogo' src={firstSectionImg} alt="NorteCon" />
                 <div className='d-flex flex-column gap-4'>
                     <h2 className='text-white'>Bem-vindo(a) à NorteCon!</h2>
-                    <a href="#aboutSection"><button className='firstSectionBtn'>Saiba mais sobre o consórcio</button></a>
+                    <p className='slogan text-white'>Simplificando a forma de planejamento financeiro e possibilitando a realização de sonhos.</p>
+                    <button className='firstSectionBtn' onClick={() => navigate('/sobre')}>Conheça a NorteCon</button>
                 </div>
             </div>
         )
@@ -33,7 +36,8 @@ export default function FirstSection(){
             <div className='firstSectionContainer d-flex align-items-center justify-content-center flex-wrap'>
                 <div className='d-flex flex-column gap-4'>
                     <h2 className='text-white'>Bem-vindo(a) à NorteCon!</h2>
-                    <a href="#aboutSection"><button className='firstSectionBtn'>Saiba mais sobre o consórcio</button></a>
+                    <p className='slogan text-white'>Simplificando a forma de planejamento financeiro e possibilitando a realização de sonhos.</p>
+                    <button className='firstSectionBtn' onClick={() => navigate('/sobre')}>Conheça a NorteCon</button>
                 </div>
                 <img className='firstSectionLogo' src={firstSectionImg} alt="NorteCon" />
             </div>
